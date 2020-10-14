@@ -1,4 +1,4 @@
-FROM node:10.19.0
+FROM node:12.18.3
 # Create app directory
 WORKDIR /usr/src/app
 COPY package*.json ./
@@ -6,4 +6,4 @@ COPY package*.json ./
 COPY . .
 RUN npm install
 EXPOSE 3000
-CMD [ "npm", "start" ]
+CMD [ "npm", "start"]
